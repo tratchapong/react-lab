@@ -1,5 +1,6 @@
 import './App.css';
 import Login from './Login';
+import MySytle from './MySytle';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         </div>
       </header>
       <Login />
+      <MySytle />
     </div>
   );
 }
