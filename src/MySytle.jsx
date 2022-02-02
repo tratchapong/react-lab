@@ -23,6 +23,11 @@ function MySytle() {
 		color: #968c8c,
 	`;
 
+  const OKButton = styled.button.attrs(props=>({
+    className: `btn btn-outline btn-${props.color}`
+  }))``
+
+
 	const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${props => props.primary ? "palevioletred" : "white"};
@@ -37,7 +42,7 @@ function MySytle() {
   return (
   <div>
 		<Button>Normal</Button>
-		<Button primary>Primary</Button>
+		<OKButton color='danger' >OK</OKButton>
 		<Heading>Codecamp 10</Heading>
   </div>);
 }
