@@ -4,13 +4,6 @@ export const FormFloat = styled.div.attrs( props => ({
     className: 'form-floating'
 }))``
 
-// export const Input = styled.input.attrs( props => ({
-//     className : 'form-control',
-//     id: props.id,
-//     type: props.type,
-//     placeHolder: 'Please enter e-mail'
-// }))``
-
 export const EmailInput = styled.input.attrs( props => ({
     className : 'form-control text-primary',
     id: 'inputEmail',

@@ -9,7 +9,7 @@ import {
   CheckBox,
   SubmitButton,
   TextMuted
-} from "./allStyle";
+} from "./loginStyle";
 
 function Login() {
   const [email, setEmail] = useState('');
