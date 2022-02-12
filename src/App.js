@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import F1 from './F1';
 
 function App() {
+  const [x, setX] = React.useState(9)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <F1 name="first"/>
+      {F1({name: "second"})}
+      <F1 name="third" />
+      {F1({name: "forth"})}
+
     </div>
   );
 }
